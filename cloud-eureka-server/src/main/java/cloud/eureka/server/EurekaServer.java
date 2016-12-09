@@ -1,7 +1,7 @@
 /**
  * eureka server
- * @author 52395090@qq.com
- * http://git.oschina.net/zhou666/spring-cloud-7simple
+ * @author a304101279@163.com
+ * https://github.com/lijiayao10/cjy-spring-cloud
  */
 package cloud.eureka.server;
 
