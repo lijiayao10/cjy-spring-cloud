@@ -6,32 +6,31 @@
  */
 package cloud.simple.interfaces;
 
+import java.util.BitSet;
+import java.util.Collections;
+import java.util.EnumMap;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.thrift.TException;
+import org.apache.thrift.async.AsyncMethodCallback;
+import org.apache.thrift.protocol.TTupleProtocol;
 import org.apache.thrift.scheme.IScheme;
 import org.apache.thrift.scheme.SchemeFactory;
 import org.apache.thrift.scheme.StandardScheme;
-
 import org.apache.thrift.scheme.TupleScheme;
-import org.apache.thrift.protocol.TTupleProtocol;
-import org.apache.thrift.protocol.TProtocolException;
-import org.apache.thrift.EncodingUtils;
-import org.apache.thrift.TException;
-import org.apache.thrift.async.AsyncMethodCallback;
-import org.apache.thrift.server.AbstractNonblockingServer.*;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.EnumMap;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.EnumSet;
-import java.util.Collections;
-import java.util.BitSet;
-import java.nio.ByteBuffer;
-import java.util.Arrays;
+import org.apache.thrift.server.AbstractNonblockingServer.AsyncFrameBuffer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 感觉接口定义生产java代码
+ * thrift.exe -r -gen java javaProject/thriftTest/learncode.thrift
+ * <p><P>
+ * @author caojiayao 
+ * @version $Id: UserService.java, v 0.1 2017年10月30日 下午4:49:53 caojiayao Exp $
+ */
 public class UserService {
 
   public interface Iface {
@@ -328,7 +327,7 @@ public class UserService {
       return new getUser_args(this);
     }
 
-    @Override
+//    @Override
     public void clear() {
     }
 
@@ -375,7 +374,7 @@ public class UserService {
       return 0;
     }
 
-    @Override
+//    @Override
     public int compareTo(getUser_args other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -475,12 +474,12 @@ public class UserService {
 
     private static class getUser_argsTupleScheme extends TupleScheme<getUser_args> {
 
-      @Override
+//      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, getUser_args struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
       }
 
-      @Override
+//      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, getUser_args struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
       }
@@ -592,7 +591,7 @@ public class UserService {
       return new getUser_result(this);
     }
 
-    @Override
+//    @Override
     public void clear() {
       this.success = null;
     }
@@ -686,7 +685,7 @@ public class UserService {
       return 0;
     }
 
-    @Override
+//    @Override
     public int compareTo(getUser_result other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -820,7 +819,7 @@ public class UserService {
 
     private static class getUser_resultTupleScheme extends TupleScheme<getUser_result> {
 
-      @Override
+//      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, getUser_result struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -833,7 +832,7 @@ public class UserService {
         }
       }
 
-      @Override
+//      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, getUser_result struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);

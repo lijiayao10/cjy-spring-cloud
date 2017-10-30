@@ -12,7 +12,8 @@ import org.apache.thrift.transport.TServerTransport;
 import org.apache.thrift.transport.TTransportException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import cloud.simple.interfaces.*;
+
+import cloud.simple.interfaces.UserService;
 import cloud.simple.service.UserServiceImpl;
 
 @Configuration

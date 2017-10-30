@@ -138,7 +138,7 @@ public class UserDto implements org.apache.thrift.TBase<UserDto, UserDto._Fields
     return new UserDto(this);
   }
 
-  @Override
+//  @Override
   public void clear() {
     setIdIsSet(false);
     this.id = 0;
@@ -279,7 +279,7 @@ public class UserDto implements org.apache.thrift.TBase<UserDto, UserDto._Fields
     return 0;
   }
 
-  @Override
+//  @Override
   public int compareTo(UserDto other) {
     if (!getClass().equals(other.getClass())) {
       return getClass().getName().compareTo(other.getClass().getName());
@@ -436,7 +436,7 @@ public class UserDto implements org.apache.thrift.TBase<UserDto, UserDto._Fields
 
   private static class UserDtoTupleScheme extends TupleScheme<UserDto> {
 
-    @Override
+//    @Override
     public void write(org.apache.thrift.protocol.TProtocol prot, UserDto struct) throws org.apache.thrift.TException {
       TTupleProtocol oprot = (TTupleProtocol) prot;
       BitSet optionals = new BitSet();
@@ -455,7 +455,7 @@ public class UserDto implements org.apache.thrift.TBase<UserDto, UserDto._Fields
       }
     }
 
-    @Override
+//    @Override
     public void read(org.apache.thrift.protocol.TProtocol prot, UserDto struct) throws org.apache.thrift.TException {
       TTupleProtocol iprot = (TTupleProtocol) prot;
       BitSet incoming = iprot.readBitSet(2);

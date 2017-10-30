@@ -1,6 +1,6 @@
 /**
  * spring cloud config server
- * @author lzhoumail@126.com 
+ * @author a304101279@163.com 
  */
 package cloud.config.server;
 

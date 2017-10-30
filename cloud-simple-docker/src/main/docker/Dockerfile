@@ -1,11 +1,11 @@
-# »ùÓÚÄÇ¸ö¾µÏñ
+ï»¿# åŸºäºé‚£ä¸ªé•œåƒ
 FROM daocloud.io/java:8
-# ½«±¾µØÎÄ¼ş¼Ğ¹ÒÔØµ½µ±Ç°ÈİÆ÷£¨tomcatÊ¹ÓÃ£©
+# å°†æœ¬åœ°æ–‡ä»¶å¤¹æŒ‚è½½åˆ°å½“å‰å®¹å™¨ï¼ˆtomcatä½¿ç”¨ï¼‰
 VOLUME /tmp
-# ¿½±´ÎÄ¼şµ½ÈİÆ÷
+# æ‹·è´æ–‡ä»¶åˆ°å®¹å™¨
 ADD cloud-simple-docker-1.0.0.jar /app.jar
-# ´ò¿ª·şÎñ¶Ë¿Ú
+# æ‰“å¼€æœåŠ¡ç«¯å£
 EXPOSE 8080
-# ÅäÖÃÈİÆ÷Æô¶¯ºóÖ´ĞĞµÄÃüÁî
+# é…ç½®å®¹å™¨å¯åŠ¨åæ‰§è¡Œçš„å‘½ä»¤
 RUN bash -c 'touch /app.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
